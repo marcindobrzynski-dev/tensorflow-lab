@@ -1,4 +1,3 @@
-import tensorflow as tf
 import numpy as np
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense
@@ -13,4 +12,4 @@ ys = np.array([-3.0, -1.0, 1.0, 3.0, 5.0, 7.0], dtype=float)
 model.fit(xs, ys, epochs=500)
 
 print(model.predict(np.array([10.0])))
-print("Oto, czego się nauczyłem: {}".format(I0.get_weights()))
+print("Here's what I learned: {}".format(I0.get_weights()))
