@@ -29,7 +29,7 @@ Each script is a self-contained exercise that can be run independently.
 
 | Dataset | Source | Used In |
 |---|---|---|
-| Fashion MNIST | Built into Keras | `basics-computer-vision.py`, `cnn-computer-vision_v01.py` |
+| Fashion MNIST | Built into Keras / TFDS | `basics-computer-vision.py`, `cnn-computer-vision_v01.py`, `tf-fashion-mnist-datasets.py` |
 | Horse or Human | [Google Storage](https://storage.googleapis.com/download.tensorflow.org/data/horse-or-human.zip) | `basics-horse-or-human_v01.py`, `basics-horse-or-human_v02.py`, `transfer-learning_v01.py` |
 | ImageNet (pretrained weights) | Keras Applications | `transfer-learning_v01.py` |
 
@@ -60,7 +60,7 @@ Each script is a self-contained exercise that can be run independently.
 3. Install dependencies:
 
    ```bash
-   pip install tensorflow tensorflow-cpu numpy
+   pip install tensorflow tensorflow-cpu tensorflow-datasets numpy
    ```
 
 > **Note:** Some scripts (`basics-horse-or-human_v02.py`, `transfer-learning_v01.py`) use `google.colab` for file uploads and are designed to run in [Google Colab](https://colab.research.google.com/). All other scripts run locally without modifications.
@@ -78,6 +78,7 @@ python <script-name>.py
 | `basics-model.py` | A minimal single-neuron model that learns the linear relationship `y = 2x - 1` using SGD. |
 | `basics-computer-vision.py` | Fashion MNIST classification with a Dense neural network and a custom callback that stops training at 95% accuracy. |
 | `cnn-computer-vision_v01.py` | Fashion MNIST classification improved with convolutional layers (Conv2D + MaxPooling). |
+| `tf-fashion-mnist-datasets.py` | Fashion MNIST classification using `tensorflow_datasets` for data loading, normalized inputs, and a Dense network with Dropout. |
 | `basics-horse-or-human_v01.py` | Binary image classification (horse vs. human) using a multi-layer CNN with `ImageDataGenerator`. |
 | `basics-horse-or-human_v02.py` | Extended version with validation dataset and image upload for prediction (Google Colab). |
 | `transfer-learning_v01.py` | Transfer learning using a pretrained InceptionV3 model with data augmentation and a custom classification head (Google Colab). |
