@@ -1,6 +1,6 @@
 # TensorFlow Lab
 
-A hands-on learning repository exploring AI/ML fundamentals with TensorFlow and Keras - from basic linear regression to transfer learning and natural language processing.
+A hands-on learning repository exploring AI/ML fundamentals with TensorFlow and Keras - from basic linear regression to transfer learning, natural language processing, and generative text models.
 
 ## Table of Contents
 
@@ -35,6 +35,7 @@ Scripts are organized by ML technique into numbered folders that follow a progre
 | Horse or Human | [Google Storage](https://storage.googleapis.com/download.tensorflow.org/data/horse-or-human.zip) | `04-binary-image-classification/basics-horse-or-human_v01.py`, `04-binary-image-classification/basics-horse-or-human_v02.py`, `05-transfer-learning/transfer-learning_v01.py` |
 | IMDB Reviews | TensorFlow Datasets | `06-nlp-text-processing/imdb-tokenizer_v01.py` |
 | ImageNet (pretrained weights) | Keras Applications | `05-transfer-learning/transfer-learning_v01.py` |
+| Irish Lyrics | Inline / [Google Storage](https://storage.googleapis.com/tensorflow-1-public/course3/irish-lyrics-eof.txt) | `07-simple-generative-ai-models/simple-gen-model-building_v01.py`, `07-simple-generative-ai-models/simple-extended-gen-model-building_v02.py` |
 
 ## Getting Started Locally
 
@@ -116,6 +117,13 @@ python <folder>/<script-name>.py
 | `first-steps-with-tokenization_v01.py` | Tokenizing Polish sentences with OOV handling and sequence padding using Keras Tokenizer. |
 | `imdb-tokenizer_v01.py` | IMDB reviews preprocessing with BeautifulSoup HTML cleanup, stopword removal, and tokenization via TensorFlow Datasets. |
 
+### 07-simple-generative-ai-models
+
+| Script | Description |
+|---|---|
+| `simple-gen-model-building_v01.py` | Basic LSTM text generator trained on an inline Irish ballad using n-gram sequences and greedy sampling. |
+| `simple-extended-gen-model-building_v02.py` | Extended version with external dataset, sliding window, learning rate schedule, early stopping, and temperature-based sampling (Google Colab). |
+
 ## Project Scope
 
 This project covers the following ML topics in a progressive learning path:
@@ -126,6 +134,7 @@ This project covers the following ML topics in a progressive learning path:
 4. **Binary Image Classification** - Training a CNN from scratch on custom image data (Horse or Human) with validation and inference.
 5. **Transfer Learning** - Leveraging pretrained models (InceptionV3/ImageNet) with frozen layers, custom heads, dropout, and data augmentation.
 6. **NLP Text Processing** - Tokenization, sequence padding, OOV handling, and text preprocessing with stopword removal.
+7. **Generative Text Models** - LSTM-based text generation with n-gram sequences, temperature sampling, and learning rate scheduling.
 
 ## Project Status
 
